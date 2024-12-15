@@ -145,7 +145,8 @@
 		"start:webview": "cd webview-ui && npm run start",
 		"build:webview": "cd webview-ui && npm run build",
 		"test:webview": "cd webview-ui && npm run test",
-		"publish:marketplace": "vsce publish && ovsx publish"
+		"publish:marketplace": "vsce publish && ovsx publish",
+		"localInstall": "npm run compile && npx vsce package && code --install-extension ./claude-dev-2.2.2.vsix"
 	},
 	"devDependencies": {
 		"@types/diff": "^5.2.1",
@@ -190,6 +191,7 @@
 		"pdf-parse": "^1.1.1",
 		"puppeteer-chromium-resolver": "^23.0.0",
 		"puppeteer-core": "^23.4.0",
+		"rewire": "^7.0.0",
 		"serialize-error": "^11.0.3",
 		"strip-ansi": "^7.1.0",
 		"tree-sitter-wasms": "^0.1.11",

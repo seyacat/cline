@@ -1,3 +1,5 @@
+This fork adds Always approve write opperations. 
+
 # Cline (prev. Claude Dev) – \#1 on OpenRouter
 
 <p align="center">
